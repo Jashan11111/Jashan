@@ -1,0 +1,13 @@
+// Example JavaScript code using async/await
+// I'm interested in understanding how async/await works in JavaScript,
+// but I'm not entirely clear on how it handles errors.
+async function fetchData(url) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        // How does error handling work here? I need to investigate further.
+        console.error("Error fetching data:", error);
+    }
+}
