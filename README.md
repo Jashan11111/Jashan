@@ -124,3 +124,15 @@ while True:
         print(f"The weather on {day} is {weather_data[day]}.")
     else:
         print("Invalid input. Please enter a valid day of the week.")
+
+        # Example code: Quick Sort algorithm
+# I find this code inspiring because it's an efficient sorting algorithm
+# that I want to learn from and possibly implement in my projects.
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quicksort(left) + middle + quicksort(right)
